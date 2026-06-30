@@ -1,0 +1,22 @@
+{
+  "stage": "robust_quantile",
+  "targets": "barenco_tof_3,cuccaro_adder_n3,gf_2pow2_mult,barenco_tof_4,gf_2pow3_mult",
+  "seeds": "2024,2025,2026,2027,2028",
+  "arms": "demo_baseline,replay_scalar,quantile_risk_neutral,quantile_q075,quantile_q090",
+  "batch_size": 16,
+  "num_mcts_simulations": 32,
+  "eval_frequency_steps": 50,
+  "demo_num_training_steps": 5000,
+  "replay_num_training_steps": 1000,
+  "gumbel_actions": 8,
+  "gumbel_scale": 0.1,
+  "replay_capacity": 100000,
+  "replay_min_size": 1000,
+  "train_batch_size": 128,
+  "num_learner_steps_per_actor": 8,
+  "eval_controls": "orbit",
+  "eval_k_values": "1",
+  "eval_seeds": "0,1,2,3,4",
+  "baseline_checkpoint_root": "results_stage01_orbit_20260625/checkpoints",
+  "reuse_stage01_baseline": 1
+}

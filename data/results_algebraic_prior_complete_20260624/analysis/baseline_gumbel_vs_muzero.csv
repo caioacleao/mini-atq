@@ -1,0 +1,7 @@
+target,n_paired,muzero_mean,gumbel_mean,mean_diff_gumbel_minus_muzero,median_diff,mean_pct_reduction_vs_muzero,ci95_mean_diff_low,ci95_mean_diff_high,gumbel_better,ties,gumbel_worse,sign_test_p_two_sided
+barenco_tof_3,10,50.0,21.5,-28.5,-29.5,56.49849825669734,-32.9,-23.7,10,0,0,0.001953125
+barenco_tof_4,10,198.0,198.0,0.0,0.0,0.0,0.0,0.0,0,10,0,
+cuccaro_adder_n3,10,46.7,15.7,-31.0,-34.0,63.839771654787135,-37.8,-23.8,10,0,0,0.001953125
+cuccaro_adder_n4,10,152.4,152.4,0.0,0.0,0.0,0.0,0.0,0,10,0,
+gf_2pow2_mult,10,22.9,17.0,-5.9,-5.5,22.70848494095975,-8.9,-3.1,8,2,0,0.0078125
+gf_2pow3_mult,10,166.8,166.8,0.0,0.0,0.0,0.0,0.0,0,10,0,

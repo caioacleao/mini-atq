@@ -1,0 +1,39 @@
+Mini AT-Q
+Copyright 2026 Caio Almeida Carneiro Leão and João Victor Moreira Cardoso
+
+This product is licensed under the Apache License, Version 2.0 (see LICENSE).
+
+------------------------------------------------------------------------
+Third-party software included in this repository
+------------------------------------------------------------------------
+
+1) alphatensor_quantum/
+   The contents of the `alphatensor_quantum/` directory are a MODIFIED copy of
+   AlphaTensor-Quantum, developed by Google LLC / Google DeepMind:
+     https://github.com/google-deepmind/alphatensor_quantum
+   Copyright 2025 Google LLC. The source code is licensed under the Apache License,
+   Version 2.0; the bundled decomposition data (alphatensor_quantum/decompositions/*.npz)
+   and accompanying documentation are licensed under the Creative Commons Attribution 4.0
+   International License (CC-BY-4.0, https://creativecommons.org/licenses/by/4.0/).
+   The original license text is retained at alphatensor_quantum/LICENSE.
+
+   As required by Section 4(b) of the Apache License, this is notice that the
+   files in that directory have been changed by the Mini AT-Q authors. The
+   modifications relevant to this work include:
+     - Alternative value-head / loss variants on the demo agent: scalar Huber,
+       categorical (HL-Gauss-style) heads at configurable support, quantile
+       (QR-DQN-style) heads, and a symlog target transform.
+     - Use of a Gumbel (MuZero) search engine in place of the AlphaZero-style
+       MCTS for compute-light operation.
+     - A frozen-checkpoint decode / evaluation harness and configuration
+       validation used to produce the paper's results.
+
+   AlphaTensor-Quantum accompanies:
+     F. J. R. Ruiz et al., "Quantum circuit optimization with AlphaTensor,"
+     Nature Machine Intelligence (2025).
+
+2) third_party/circuit-to-tensor (git submodule)
+   A separate work by T. Laakkonen:
+     https://github.com/tlaakkonen/circuit-to-tensor
+   It is referenced as a git submodule and remains under its own license.
+   It is not redistributed as part of this repository's source tree.

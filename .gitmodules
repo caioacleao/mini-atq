@@ -1,0 +1,3 @@
+[submodule "third_party/circuit-to-tensor"]
+	path = third_party/circuit-to-tensor
+	url = https://github.com/tlaakkonen/circuit-to-tensor.git

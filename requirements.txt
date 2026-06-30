@@ -1,0 +1,18 @@
+# Mini AT-Q --- dependencies for the ANALYSIS / FIGURE reproduction layer
+# (the tools/paper_*.py scripts that regenerate the paper's numbers and figures
+# from the CSVs in data/).
+#
+# For the AGENT and TRAINING stack (JAX, dm-haiku, mctx, CUDA, ...), install the
+# pinned environment shipped with the demo:
+#     pip install -r alphatensor_quantum/src/demo/requirements.txt
+#
+# For the optional classical ZX baseline (tools/comparison/qiskit_compare.py),
+# uncomment the qiskit / pyzx lines below.
+
+numpy>=2.1
+scipy>=1.14
+matplotlib>=3.8
+
+# Optional --- classical reference baseline only:
+# qiskit>=1.0
+# pyzx>=0.8

@@ -1,0 +1,19 @@
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+.ipynb_checkpoints/
+
+# OS / editor
+.DS_Store
+
+# JAX / compilation cache
+.jax_cache/
+
+# Evaluation data staged at the repo root by data/restore.sh
+/results_*/
+
+# Regenerated analysis outputs (numbers + figures); the scripts recreate them
+/outputs/*
+!/outputs/.gitkeep
