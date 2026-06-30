@@ -9,8 +9,6 @@ This repository is the reproducibility companion to the paper:
 
 ---
 
-## What the paper shows 
-
 AlphaTensor-Quantum (AT-Q) minimizes a circuit's **T-count** by decomposing its
 GF(2) signature tensor with an AlphaZero-style RL agent. The publicly released
 *demo* is fragile: on some circuits it solves 0/5. We trace this to a
@@ -20,7 +18,7 @@ giving a degenerate single-action policy. We (i) propose a **training-free, per-
 statistic** that *predicts which circuits collapse before any training*; (ii) **fix**
 the collapse with a value head that accommodates the tail (a one-line Huber loss, or
 adequate distributional support); and (iii) make the agent compute-light by swapping
-the AlphaZero-style MCTS for a **Gumbel** search. We package the result as **Mini AT-Q**.
+the AlphaZero-style MCTS for a **Gumbel** search. 
 
 ---
 
@@ -42,7 +40,7 @@ tools/                 Reproduction scripts:
                          paper_efficiency_figure.py   timing figure
                          paper_loss_illustration.py   loss/influence figure
                          build_benchmark_manifests.py target manifests
-                         comparison/qiskit_compare.py classical ZX (PyZX) baseline
+                         comparison/qiskit_compare.py PyZX baseline
                          run_a2_value_controls_task.sh per-job training harness
 data/                  Frozen-decode evaluation CSVs (the unit of record) +
                        restore.sh + README (the data -> table/figure mapping).
